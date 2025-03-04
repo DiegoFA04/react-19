@@ -13,8 +13,8 @@ createRoot(document.getElementById("root")!).render(
 function HolaMundo() {
   return (
     <>
-      <h1>Hola Mundo</h1>
-      <div>Estiamdo</div>
+      <h1 className="new">Hola Mundo</h1>
+      <div className="new">Estimado</div>
     </>
   );
 }
