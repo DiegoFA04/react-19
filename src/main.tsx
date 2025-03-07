@@ -10,10 +10,10 @@ createRoot(document.getElementById("root")!).render(
   </StrictMode>
 );
 
-function HolaMundo() {
+export function HolaMundo() {
   return (
     <>
-      <h1 className="new">Hola Mundo</h1>
+      <h1 className="new">Hola Mundo Nuevo</h1>
       <div className="new">Estimado</div>
     </>
   );
