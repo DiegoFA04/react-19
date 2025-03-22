@@ -7,7 +7,7 @@ import Header from "./shared/components/header/Header";
 function App() {
   const [count, setCount] = useState(0);
   const [name, setName] = useState("Jorge");
-  const [isImportant, setIsImportant] = useState("Yes");
+  const [isImportant, setIsImportant] = useState(true);
 
  
 
@@ -24,7 +24,7 @@ function App() {
       </div>
       <h1>Hola Jorge</h1>
       <h1>Vite + React</h1>
-      <button onClick={() => setIsImportant("No")} >{isImportant}</button>
+      <button onClick={(prev) => setIsImportant(!prev)} >{isImportant ? "Si" : "No"}</button>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
